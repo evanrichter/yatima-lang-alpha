@@ -1,0 +1,7 @@
+project: yatima-lang-alpha
+target: parse
+
+cmds:
+  - cmd: /parse -- -detect_leaks=0
+  - cmd: /parse_no_inst @@ -- -detect_leaks=0
+    libfuzzer: false
